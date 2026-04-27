@@ -1,0 +1,1093 @@
+/* fonts */
+.jost {
+    font-family: "Jost",
+        Arial,
+        Helvetica,
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.belanosimaRegular {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.belanosimaSemibold {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.belanosimaBold {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.keania {
+    font-family: "Keania One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.creteRegular {
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.creteItalic {
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background2);
+    color: var(--background-100);
+    font-family: var(--text);
+}
+
+/*light mode*/
+:root {
+    --text1: #07162E;
+    --background1: #d9cbc2;
+    --primary1: #677d6a;
+    --secondary1: #1a3636;
+    --accent1: #3c5070;
+    --display-head: "Belanosima", sans-serif;
+    --display2: "Keania One", sans-serif;
+    --text: "Jost", sans-serif;
+    --second: "Crete Round", serif;
+}
+
+/*dark mode*/
+
+:root {
+    --background2: #1b3737;
+    --primary2: #07162E;
+    --secondary2: #D9CBC2;
+    --accent2: #99A89B;
+    --box-shadow: 21px 28px 71px -4px var(--accent-700);
+    /* -webkit-box-shadow: 21px 28px 71px -4px var(--accent-700);
+        -moz-box-shadow: 21px 28px 71px -4px var(--accent-700); */
+    --big: 110%;
+}
+
+/*shades*/
+:root {
+    --text-900: #07152c;
+    --text-950: #030b16;
+
+    --background-50: #f5f2ef;
+    --background-100: #ebe4e0;
+    --background-200: #d8c9c0;
+    --background-600: #7d614f;
+
+    --primary-50: #f1f4f1;
+    --primary-100: #e3e8e4;
+    --primary-200: #c7d1c8;
+    --primary-300: #abbaad;
+    --primary-400: #8fa392;
+    --primary-500: #738c76;
+    --primary-600: #5c705f;
+    --primary-700: #455447;
+    --primary-800: #2e382f;
+
+    --secondary-50: #eef7f7;
+    --secondary-100: #ddeeee;
+    --secondary-200: #badede;
+    --secondary-300: #98cdcd;
+    --secondary-400: #75bdbd;
+    --secondary-500: #53acac;
+    --secondary-600: #428a8a;
+    --secondary-700: #326767;
+    --secondary-800: #214545;
+
+    --accent-50: #eef1f6;
+    --accent-100: #dee4ed;
+    --accent-200: #bdc8db;
+    --accent-300: #9cadc9;
+    --accent-400: #7a92b8;
+    --accent-500: #5977a6;
+    --accent-600: #475f85;
+    --accent-700: #364763;
+    --accent-800: #242f42;
+}
+
+/* image styles */
+figure {
+    margin: 0;
+}
+
+.imagefw {
+    width: 100%;
+    height: auto;
+}
+
+.image50 {
+    width: 50%;
+    height: auto
+}
+
+.imagec {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fade {
+    opacity: .6;
+}
+
+/* .header {
+    background: #03a9f4;
+} */
+/* .content {
+    background: #129a22;
+} */
+/* Global Styles */
+h1 {
+    font-family: var(--display-head);
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+/* ============Navigation=========== */
+.link,
+.link1 {
+    text-decoration: none;
+    color: var(--secondary2);
+}
+
+/* change on hover */
+ul.navbarList li a:hover,
+.submitButton:hover,
+.signButton:hover
+{
+font-family: var(--display-head);
+background-color: var(--primary-600);
+color: var(--accent-100);
+border-bottom: var(--primary-800) solid 4px;
+text-transform: uppercase;
+font-size: .85em;
+padding: 0.8rem 1rem;
+display: block;
+}
+
+a.logo,
+ul.navbarList li a {
+    text-decoration: none;
+    color: var(--secondary2);
+    display: block;
+    /* default is inline element, display:block makes <a> to be width: 100% */
+}
+
+a.logo {
+    flex: 1;
+    font-family: var(--display-head), sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: left;
+}
+
+.moreInfo,
+a.logo,
+ul.navbarList li {
+    list-style: none;
+    font-family: var(--text), sans-serif;
+    margin: .33em 0;
+
+}
+
+.head1 {
+    font-size: 2em;
+    font-family: var(--display-head);
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    text-shadow: 2px 2px var(--accent-800);
+}
+
+a.menuIcon {
+    display: block;
+    color: var(--secondary2);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5rem 1rem;
+}
+
+nav.navbar {
+    flex: 2;
+}
+
+header {
+    display: flex;
+}
+
+
+.hero {
+    background-image: url("../images/nail.jpg");
+    background-size: cover;
+}
+
+.heroAbout:before {
+    background-color: var(--background2);
+    opacity: .2;
+}
+
+.heroAbout {
+    background-image: url("../images/hero-about.jpg");
+    background-size: cover;
+    padding: 2em 0;
+    margin-bottom: 1em;
+    backdrop-filter: blur(10px);
+}
+
+.hero h1 {
+    z-index: 2;
+    color: var(--background1);
+    text-align: center;
+}
+
+
+.card {
+    color: var(--background-100);
+}
+
+.details {
+    background-color: var(--primary-700);
+    padding: 2em;
+    margin-top: 0;
+    margin-left: .0em;
+    margin-right: 0em;
+    margin-bottom: 1em;
+}
+
+.footer {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.aside {
+    color: var(--background2);
+}
+
+.tipBox {
+    background-color: var(--primary-400);
+    color: var(--background2);
+    padding: 1em;
+}
+
+
+
+/* =========Index Page========== */
+.details h2 {
+    font-family: var(--display-head);
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    flex-basis: 100%;
+}
+
+.level {
+    font-weight: normal;
+}
+
+
+
+
+/* =========Projects Home Page======= */
+.bigMenu {
+    color: var(--background2);
+}
+
+.menu {
+    background-color: var(--primary-400);
+    color: var(--background2);
+    padding: 5%;
+}
+
+.menuh2 {
+    font-size: .9em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+.menu h3 a {
+    font-family: var(--display-head);
+    font-weight: 500;
+    font-size: 2em;
+    text-align: left;
+    color: var(--background2);
+    text-decoration: none;
+}
+
+.menuh3 {
+    border-bottom: var(--primary-300) solid 1px;
+    padding-bottom: .33em;
+}
+
+.description {
+    color: var(--accent-800);
+    font-size: 1.42em;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.moreInfo {
+    font-size: 1em;
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.search {
+    background-color: var(--accent2);
+     color: var(--primary-800);
+}
+.search1 {
+    color: var(--accent2);
+    background-color: var(--primary-800);
+}
+.search1::placeholder {
+    color: var(--background1);
+    margin-left: .33em;
+}
+.search::placeholder{
+        color: var(--background2);
+        left-margin: .33em;
+}
+/* =========Projects Home Page======= */
+.container{
+    background-color: var(--accent2);
+    color: var(--background2);
+    padding: 2em;
+    margin: 1em 2em;
+}
+.projectTitle{
+    font-size: 2.675em;
+    color: var(--background2);
+}
+.projectContainer{
+    display: flex;
+    justify-content: center;
+}
+.projectLevel{
+    size: 1.125em;
+    font-family: var(--text);
+    padding: 1em;
+}
+.fave {
+    background-color: var(--accent2);
+    border: none;
+    color: var(--background2);
+    text-decoration: none;
+    font-size: 1.375em;
+    cursor: pointer;
+    display: inline-block;
+    padding: .33em;
+}
+.projectH3{
+    margin-top: 1em;
+}
+.projectLists{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.projectL{
+    list-style: none;
+    text-align: left;
+    margin-left: 2em;
+    display: block;
+
+}
+.projectL2 {
+    list-style: none;
+    text-align: left;
+    margin-left: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+.stepList{
+    text-align: left;
+    margin-left: 2em;
+    padding: 0 2em;
+}
+
+/* ====================Contact Form==========*/
+.contact {
+    background-color: var(--primary-600);
+    margin: 2em 0em;
+}
+
+.contactForm {
+    background-color: var(--background-100);
+    border: var(--background2) .33em;
+    padding: 1em;
+    box-shadow: var(--box-shadow);
+}
+
+.contactGreeting {
+    padding: 1.375em;
+}
+
+.formFields input[type="text"]:focus,
+.formFields input[type="email"]:focus,
+.formFields textarea:focus {
+    border: var(--accent2) solid 3px;
+}
+
+.formFields input[type="text"],
+.formFields input[type="email"],
+.formFields textarea {
+    border: none;
+    background-color: inherit;
+    border-bottom: var(--background2) solid 1px;
+    text-align: left;
+    margin: .425em;
+    width: 98%;
+}
+
+.formFields label {
+    color: var(--background2)
+}
+
+.formFields input::placeholder {
+    opacity: 0.5;
+}
+
+.submitButton:hover {
+    font-size: 105%;
+}
+
+.submitButton {
+    width: 60%;
+    background-color: var(--background2);
+    color: var(--background-200);
+    padding: 1em;
+    margin: .33em auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+
+.form-fields label,
+textarea::placeholder {
+    font-size: 1.125em;
+}
+
+textarea {
+    opacity: 0.5;
+    height: 150px;
+    border: none;
+    width: 100%;
+    min-width: 45%;
+}
+
+.signUp img {
+    border-radius: 2%;
+}
+
+/* .sign-up{
+    border-radius: 10px;
+    border: var(--accent2) solid 3px;
+} */
+form {
+    padding: 1em;
+}
+
+.formExperience input[type="checkbox"] {
+    padding: .33em;
+    color: var(--background-200)
+}
+
+.signBox {
+    /* border: var(--primary-500) solid 2px; */
+    border-radius: 4px;
+
+}
+
+.signBox input[type="text"],
+.signBox input[type="email"],
+.signBox input[type="password"] {
+    margin: .33em 0;
+    text-align: left;
+    width: 100%;
+    padding: .375em;
+    background-color: inherit;
+    border: none;
+    border-bottom: var(--background-100) solid 2px;
+
+}
+
+.signBox legend {
+    font-family: var(--display-head);
+    font-weight: 600;
+    font-size: 1.475em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1em auto;
+}
+
+.signButton,
+.forumDiscussion button {
+    width: 60%;
+    background-color: var(--accent2);
+    color: var(--background2);
+    font-weight: 500;
+    padding: 1em;
+    margin: .675em auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+
+.center {
+    text-align: center;
+    margin: .475em;
+}
+
+.link1:hover {
+    background-color: var(--accent2);
+    padding: .175em 1em;
+    color: var(--background2);
+    border-radius: 10px;
+}
+
+/* =======Workshop Page====== */
+.events {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.event {
+    margin: .675em 0;
+}
+
+.events img {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.workshopResults {
+    background-color: var(--primary-600);
+    padding: 1em;
+}
+/* Calendar styling */
+.calendar h1{
+    color: var(--primary-300);
+}
+    /* Styles for calendar */
+/* App.module.css */
+
+/* 1. The Tile Styles */
+.calendarContainer :global(.react-calendar__tile) {
+    color: var(--primary-300);
+    background-color: var(--primary-600);
+    font-family: var(--text);
+    /* width: 700px;  <-- Careful with this, it might make the calendar too wide for the container */
+    max-width: 100%;
+    border: none !important;
+    /* Removes the boxy border around tiles */
+    outline: none !important;
+    border-radius: 4px;
+}
+.calendarContainer :global(.react-calendar){
+    background: var(--primary-600);
+    border-radius: 4px;
+    border: none;
+}
+/* 2. The Button Reset (This fixes the outlines) */
+.calendarContainer :global(.react-calendar button) {
+    margin: 0;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    /* Sometimes 'outline' is actually a 'box-shadow' */
+}
+
+/* 3. Hover and Focus states */
+.calendarContainer :global(.react-calendar__tile:enabled:hover),
+.calendarContainer :global(.react-calendar__tile:enabled:focus),
+.calendarContainer :global(.react-calendar__tile--now) {
+    background: var(--background2) !important;
+    color: var(--background1) !important;
+    outline: none !important;
+}
+
+/* 4. Navigation Arrows (Prev/Next buttons) */
+.calendarContainer :global(.react-calendar__navigation button:enabled:hover),
+.calendarContainer :global(.react-calendar__navigation button:enabled:focus) {
+    background-color: var(--background2) !important;
+    color: var(--background1) !important;
+}
+
+#zip {
+    width: 50%;
+    padding: .33em;
+}
+
+.eventSpecs {
+    list-style: none;
+}
+
+.eventSpecs button {
+    margin: .675em 0;
+    border-radius: 10px;
+    border: none;
+    padding: .675em;
+
+}
+
+.eventTime {
+    background-color: var(--primary-500);
+    color: var(--background2);
+    padding: .33em;
+}
+
+.eventName,
+.eventSpecs button {
+    background-color: var(--background2);
+    color: var(--background-200);
+    padding: .33em;
+}
+
+.eventDetails {
+    background-color: var(--primary-700);
+    color: var(--background-200);
+    padding: .33em;
+}
+
+.event h2 {
+    font-family: var(--second);
+    text-align: left;
+}
+
+.numEvents {
+    font-family: var(--second);
+    font-weight: 400;
+}
+
+/* =====Forum Page===== */
+
+.row {
+    padding: .2em .33em;
+    margin: 1em .475em;
+    border: var(--accent-800) solid 2px;
+    border-radius: 10px;
+    list-style: none;
+}
+
+.row a {
+    color: var(--background1);
+    text-decoration: none;
+}
+
+.row p {
+    margin: .2em o;
+}
+
+.topBar {
+    background-color: var(--primary-400);
+    color: var(--accent-800);
+    padding: 0 1.2em;
+}
+
+.timestamp {
+    padding-right: .4em;
+}
+
+.forumMain {
+    background-color: var(--accent2);
+    padding: .33em .2em;
+}
+
+.bottom,
+.topComment,
+.postQuestion {
+    color: var(--accent-700);
+}
+
+.forumDiscussion button {
+    width: 90%;
+    margin-top: 0;
+    display: block;
+}
+
+.forumDiscussion button:hover {
+    background-color: var(--background1);
+    color: var(--background2);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.forumComment {
+    background-color: var(--background-200);
+    width: 80%;
+    height: 10em;
+}
+
+.forum-btn {
+    display: block;
+    margin: .475em 0;
+}
+
+.comments {
+    margin: 1em 0;
+}
+
+.commentTs {}
+
+.postTitle {
+    color: var(--accent-800);
+    font-family: var(--display-head);
+    font-weight: normal;
+}
+
+.bottom p {
+    font-size: .9em;
+}
+
+.fTopbar,
+.fBottombar {
+    margin: .675em .675em;
+    border-bottom: var(--background-200) solid 1px;
+    padding: 1em 0;
+}
+
+.fBottombar {
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.fBottombar ul,
+.fTopbar ul {
+    list-style: none;
+}
+
+.fBottombar li,
+.fTopbar li {
+    margin: .475em 0;
+}
+
+.fTopbar li:nth-child(1)::before {
+    content: "\002B24\002002";
+    color: var(--secondary-600);
+}
+
+.fTopbar li:nth-child(2)::before {
+    content: "\002B24\002002";
+    color: var(--secondary-200);
+}
+
+.fBottombar li:nth-child(1)::before {
+    content: "\002B24\002002";
+    color: var(--secondary-600);
+}
+
+.fBottombar li:nth-child(2)::before {
+    content: "\002B24\002002";
+    color: var(--secondary-200);
+}
+
+.fBottombar li:nth-child(3)::before {
+    content: "\002B24\002002";
+    color: var(--accent-500);
+}
+
+.fBottombar li:nth-child(4)::before {
+    content: "\002B24\002002";
+    color: var(--background-600);
+}
+
+.fBottombar li:nth-child(5)::before {
+    content: "\002B24\002002";
+    color: var(--background-200);
+}
+
+/* ====================media queries====================== */
+@media screen and (min-width:768px) {
+
+    /* .nav{
+        background: #9978f3;
+    }
+    .header {
+        background: #03a9f4;
+    } */
+    /* Navigation bar */
+    nav {
+        width: 100%;
+    }
+
+    .nav1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 0;
+        align-items: center;
+    }
+    .cap{
+        text-transform: uppercase;
+    }
+
+    .nav1 div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: space-between;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+        margin-bottom: 0em;
+        align-items: space-between;
+    }
+
+    .navbarList {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: .475em;
+        align-self: center;
+    }
+
+    nav input[type=text] {
+        margin-top: .33em;
+        margin-bottom: .33em;
+        flex-grow: 1em;
+        flex-basis: 5%;
+        align-self: center;
+
+    }
+
+    a.menuIcon {
+        display: none;
+    }
+
+    /* container */
+    .projectCard {
+        padding: 1em;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 1em;
+        gap: 10;
+        flex-grow: 0;
+    }
+
+    /* child to --> project card  */
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex: 1;
+        margin: 1em;
+    }
+
+    .card img {
+        border-bottom: (--primary-400) solid 4px;
+        width: 100%;
+        align-self: center;
+        flex-shrink: 1;
+    }
+
+    .hero {
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
+
+    /* child to --> card */
+    .hero .details {
+        background-color: var(--primary-700);
+        /* height: 200px; */
+        padding: 2em .33em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .content {
+        background: #129a22;
+    } */
+
+    .card {
+        color: var(--background-100);
+    }
+
+    .details {
+        background-color: var(--primary-700);
+        padding-top: 0em;
+        padding-bottom: 2em;
+    }
+
+    .details h2 {
+        padding-top: 1em;
+        margin-bottom: .475em;
+    }
+
+    /* tip section */
+    .aside {
+        background-color: var(--primary-400);
+        display: flex;
+        justify-content: space-evenly;
+        flex-basis: 100%;
+        padding: 1em;
+        align-content: center;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        flex: 2;
+    }
+
+    .aside img,
+    .signUp img {
+        width: 45%;
+        align-self: center;
+        flex-basis: 45%;
+        flex-grow: 0;
+        flex-shrink: 2;
+    }
+
+    .tipBox {
+        padding: 1.2em;
+        align-self: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .tipWeek {
+        background: #83129a;
+    }
+
+    .tipBox {
+        color: var(--background2);
+        padding: 1em;
+        margin: 1em;
+    }
+
+    /* Project Page */
+    .bigMenu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+        color: var(--background2);
+    }
+
+    .bigMenu div {
+        background-color: var(--primary-400);
+        color: var(--background2);
+        padding: 5%;
+    }
+
+    .bigMenu img {
+        flex-basis: 60%;
+        /* flex-grow: 1; */
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 60%;
+    }
+
+    .photo {
+        max-width: 60%;
+    }
+
+    /* Contact form */
+    .contact {
+        display: flex;
+        padding: 2em;
+        align-items: center;
+    }
+
+    .signUp {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-basis: 100%;
+        padding: 1em;
+        align-content: center;
+        align-items: center;
+    }
+
+    .signBox {
+        flex: 2 50%;
+        width: 50%;
+    }
+
+    .formExperience {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formAdditional {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Forum Page */
+    .eventSpecs {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .eventSpecs li {
+        flex-basis: 20%;
+    }
+
+    .bottom {
+        display: flex;
+    }
+
+    .forum {
+        display: flex;
+        flex-direction: rows;
+        width: 100%;
+    }
+
+    .forumDiscussion {
+        padding: 1em 1em 0 0;
+        width: 30%;
+    }
+
+    .forumMain {
+        width: 100%;
+    }
+}
